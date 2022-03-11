@@ -8,9 +8,7 @@ dotenv.config()
 app.use(express.json())
 app.use(cors())
 
-const { PORT = 3003 } = process.env
-
-const server = app.listen(PORT , ()=>{
+const server = app.listen(process.env.PORT || 3003 , ()=>{
     if(server){
         const address = server.address() as AddressInfo
         console.log(`server is running on port http://localhost:${address.port}`)
