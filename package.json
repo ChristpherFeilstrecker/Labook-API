@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "migrations": "tsnd src/migrations.ts",
     "start": "node build/index.js",
     "build": "tsc",
     "dev": "tsnd src/index.ts"

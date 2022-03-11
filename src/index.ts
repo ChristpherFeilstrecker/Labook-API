@@ -8,9 +8,6 @@ import UserData from './data/UserData2'
 import { Authenticator } from './services/Authenticator'
 import { HashManager } from './services/HashManager'
 import { IdGenerator } from './services/IdGenerator'
-import {createTables}   from "./data/migration/migration"
-
-//createTables() //migration para criar e populartabelas 
 
 const userController = new UserController(
     new UserBusiness(

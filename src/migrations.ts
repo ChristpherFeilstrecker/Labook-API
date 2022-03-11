@@ -38,7 +38,7 @@ export const createTables = async (): Promise<boolean> => {
            `);
 
         console.log("Tabelas criadas com sucesso!");
-        insertUsers()
+        populatTables()
         return true;
     } catch (e) {
         const error = e as Error;
@@ -48,7 +48,7 @@ export const createTables = async (): Promise<boolean> => {
 };
 
 
-const insertUsers = async (): Promise<boolean> => {
+const populatTables = async (): Promise<boolean> => {
     try {
         await connection.raw(`
         INSERT INTO labook_users VALUES (
@@ -90,4 +90,4 @@ const insertUsers = async (): Promise<boolean> => {
 
 const closeConnection = () => { connection.destroy(); };
 
-
+createTables()
