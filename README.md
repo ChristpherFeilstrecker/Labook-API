@@ -2,12 +2,14 @@
 
 ### Projeto Labook API é uma cópia do banco de dados baseado no Facebook.
 
+Obs.: Optei por fazer apenas os 4 endpoints mínimos e sem implementar a arquitetura limpa, pois foquei em fazer o migration
+que ainda tinha dúvidas de como funcionava e montar o heroku que não funcionou no projeto anterior.
 
 ## Documentação API:
- Acesse o postman aqui 👉 [ <img src="https://cdn-icons-png.flaticon.com/512/3893/3893170.png" width="70" align="center"> ](https://documenter.getpostman.com/view/18385085/UVkpQGUM)
+ Acesse o postman aqui 👉 [ <img src="https://cdn-icons-png.flaticon.com/512/3893/3893170.png" width="70" align="center"> ](https://documenter.getpostman.com/view/18385085/UVsHUnyw)
 
 ## Deploy no Heroku:
-[] 
+[https://labook-api-carver.herokuapp.com] 
 
 ## Desenvolvedor 🤖
 
@@ -39,4 +41,10 @@
 
 ## Os endpoints são:
 
- → Pegar o próprio perfil
+   → Criar usuário
+   
+   → Logar usuário
+   
+   → Criar postagem
+   
+   → Pegar postagem por ID
